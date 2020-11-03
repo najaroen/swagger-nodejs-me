@@ -1,0 +1,21 @@
+
+openapi: 3.0.0
+info:
+  title: Sample API
+  description: test from https://docs.opendota.com/
+  version: 0.1.9
+servers:
+  - url: https://api.opendota.com/api
+    description: test from https://docs.opendota.com/
+paths:
+  /playersByRank:
+    get:
+      summary: Player By Rank.
+      description: Player By Rank.
+      responses:
+        '200':    # status code
+          description: List of Player
+          content:
+            application/json:
+              schema: 
+                type: array
